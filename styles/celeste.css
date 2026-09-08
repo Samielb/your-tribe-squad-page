@@ -1,9 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 img {
  width:10vw ;
+ background-color: white;
+ height: 100%;
 }
+
+
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display:flex;
+  gap: 1em;
+  align-items: center;
+  background-color: #3a604a
+}
+
+ul li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #55bac1;
 }
