@@ -35,7 +35,7 @@ h1 {
     padding-left: 0.5vw;
 }
 
-ul {
+ul.us {
     list-style-type: none;
     display: grid;
     grid-template-columns: 10em 10em 10em;
