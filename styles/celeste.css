@@ -33,4 +33,10 @@ ul li a:hover {
 
 h1 {
     padding-top: 1vw;
+    padding-left: 0.5vw;
+}
+
+img.celeste {
+    border-radius: 1vw 1vw;
+    padding-left: 0.5vw;
 }
