@@ -41,12 +41,12 @@ ul.us {
     grid-template-columns: 10em 10em 10em;
     grid-template-rows: 2em 2em;
     column-gap: 2em;
+    padding-left: 0.5vw;
 
 }
 
 img.celeste {
     border-radius: 1vw 1vw;
-    padding-left: 0.5vw;
     width: 10vw;
 }
 
