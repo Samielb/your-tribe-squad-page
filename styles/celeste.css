@@ -30,3 +30,7 @@ ul li a {
 ul li a:hover {
   background-color: #55bac1;
 }
+
+h1 {
+    padding-top: 1vw;
+}
