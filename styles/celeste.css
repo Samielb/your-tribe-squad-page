@@ -11,7 +11,7 @@ img.logo {
 
 
 menu {
-  list-style-type: none;
+  list-style-type: none; /*to get rid of the list dots */
   margin: 0;
   padding: 0;
   display:flex;
@@ -24,7 +24,6 @@ menu li a {
   display: block;
   color: rgb(0, 0, 0);
   padding: 14px 16px;
-  text-decoration: none;
 }
 
 menu li a:hover {
@@ -55,4 +54,8 @@ img.lyndsey {
     width: 12.25vw;
     height: auto;
     border-radius: 1vw 1vw;
+}
+
+h2 {
+ top: 10em;
 }
