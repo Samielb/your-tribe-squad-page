@@ -57,5 +57,7 @@ img.lyndsey {
 }
 
 h2 {
- top: 10em;
+    top: 5em;
+    position:relative;
+    padding-left: 0.5vw;
 }
