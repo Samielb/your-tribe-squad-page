@@ -38,9 +38,9 @@ h1 {
 ul.us {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 10em 10em 10em 10em;
+    grid-template-columns: 10em 10em 10em;
     grid-template-rows: 2em 2em;
-    gap: 2em;
+    column-gap: 2em;
 
 }
 
@@ -51,13 +51,13 @@ img.celeste {
 }
 
 img.lyndsey {
-    width: 12.25vw;
+    width: 10vw;
     height: auto;
     border-radius: 1vw 1vw;
 }
 
 img.sami {
-    width: 11.5vw;
+    width: 10vw;
     height: auto;
     border-radius: 1vw 1vw;
 }
