@@ -1,0 +1,162 @@
+﻿/* Basis */
+* { box-sizing: border-box;  }
+body {
+  margin: 0; 
+  background: #f7f5ef; 
+  color: #242720; 
+  font-family: Arial, sans-serif; 
+}
+a { color: inherit;  text-decoration: none;  }
+a:hover { text-decoration: underline;  }
+a:focus-visible, .schuifvenster:focus-visible { outline: 3px solid #8657cd;  outline-offset: 4px;  }
+h1, h2, h3, p { margin-top: 0;  }
+h1 { font-size: 60px;  font-weight: 500;  }
+h2 { font-size: 36px;  font-weight: 500;  }
+em { font-family: Georgia, serif;  }
+.inhoud { width: 90%;  max-width: 1280px;  margin: 0 auto;  }
+
+/* Grid zet logo, Home, locatie en Squads in vier kolommen. */
+header { border-bottom: 2px solid #000000;  }
+.navigatie {
+  display: grid; grid-template-columns: auto auto 1fr auto; 
+  align-items: center; 
+  gap: 30px; 
+  width: 94%; 
+  margin: auto; 
+  padding: 22px 0; 
+}
+.logo img { display: block;  width: 180px;  height: auto;  }
+.locatie { justify-self: center; font-size: 14px; }
+.knop {
+  background: #242720; 
+  color: white; 
+  padding: 14px 22px; 
+  border-radius: 5px; 
+}
+
+/* Drie gelijke kolommen, op mobiel een kolom. */
+.oprichters { padding: 40px 0;  }
+.oprichters-raster { display: grid;  grid-template-columns: 1fr 1fr 1fr;  gap: 22px;  }
+/* Elke oprichter heeft een eigen kolom. */
+.oprichter:nth-child(1) { grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; }
+.oprichter:nth-child(2) { grid-column-start: 2; grid-column-end: 3; grid-row-start: 1; }
+.oprichter:nth-child(3) { grid-column-start: 3; grid-column-end: 4; grid-row-start: 1; }
+.oprichter img {
+  width: 100%; 
+  height: 320px; 
+  object-fit: cover; 
+  border-radius: 5px; 
+}
+.oprichter h2 { font-size: 20px;  margin: 16px 0 14px;  }
+
+/* Sliders */
+.campussen, .studenten { padding: 40px 0;  }
+.campussen { background: #eaece2;  }
+.schuifvenster { overflow-x: auto;  padding: 5px 0;  }
+.schuifrij { display: flex;  gap: 22px;  width: max-content;  }
+.schuifrij article { flex-shrink: 0;  overflow: hidden;  border-radius: 5px;  }
+
+.campus-kaart {
+  position: relative; 
+  width: 450px; 
+  height: 280px; 
+  background: #6b7567; 
+}
+.campus-kaart img { width: 100%;  height: 100%;  object-fit: cover;  }
+.campus-tekst {
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  padding: 30px 24px 24px; 
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8)); 
+  color: white; 
+}
+.campus-tekst span { font-size: 11px;  }
+.campus-tekst h3 { font-size: 25px;  margin: 8px 0 0;  }
+.studenten .schuifrij { gap: 16px;  }
+
+/* slider.js berekent hoe ver en hoe snel de kaarten schuiven. */
+.schuifrij.doorlopend { animation: doorlopen var(--duur) linear infinite;  }
+
+@keyframes doorlopen {
+  to { transform: translateX(var(--afstand));  }
+}
+.student-kaart { width: 280px;  background: #eeeee6;  border: 1px solid #d9d9cf;  }
+.student-kaart img {
+  display: block; 
+  width: 100%; 
+  height: 230px; 
+  object-fit: cover; 
+}
+.student-kaart > div { padding: 20px;  }
+.student-kaart h3 { margin-bottom: 14px;  }
+/* Bekijk-knoppen */
+.bekijk-knop {
+  display: inline-block; 
+  text-decoration: none; 
+  padding: 9px 16px; 
+  border: 0; 
+  border-radius: 5px; 
+  background: #242720; 
+  color: white; 
+  font: inherit; 
+  font-size: 13px; 
+  cursor: pointer; 
+}
+.bekijk-knop:hover { background: #44483c;  }
+.bekijk-knop:focus-visible { outline: 3px solid #8657cd;  outline-offset: 4px;  }
+footer img { width: 130px; height: auto; display: block; }
+/* Drie kolommen: logo, tekst en de link naar boven. */
+footer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+  padding: 26px 0;
+  border-top: 1px solid #d9d9cf;
+}
+footer p { margin: 0; text-align: center; }
+
+/* Start en end zijn de rasterlijnen waartussen een onderdeel staat. */
+.navigatie > a { grid-row-start: 1; }
+.navigatie .logo { grid-column-start: 1; grid-column-end: 2; }
+.navigatie > a:nth-child(2) { grid-column-start: 2; grid-column-end: 3; }
+.navigatie .locatie { grid-column-start: 3; grid-column-end: 4; }
+.navigatie .knop { grid-column-start: 4; grid-column-end: 5; }
+
+footer > img { grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; }
+footer > p { grid-column-start: 2; grid-column-end: 3; grid-row-start: 1; }
+footer > a { grid-column-start: 3; grid-column-end: 4; grid-row-start: 1; }
+/* Aanpassingen voor kleine schermen */
+@media (max-width: 600px) {
+  .logo img { width: 130px;  }
+  h1 { font-size: 36px;  }
+  h2 { font-size: 26px;  }
+  .navigatie { grid-template-columns: auto 1fr auto; gap: 20px; }
+  .navigatie .locatie { grid-column-start: 1; grid-column-end: 4; grid-row-start: 2; text-align: center; }
+  .navigatie .knop { grid-column-start: 3; grid-column-end: 4; justify-self: end; }
+  .oprichters-raster { grid-template-columns: 1fr; }
+  .oprichter:nth-child(1) { grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; }
+  .oprichter:nth-child(2) { grid-column-start: 1; grid-column-end: 2; grid-row-start: 2; }
+  .oprichter:nth-child(3) { grid-column-start: 1; grid-column-end: 2; grid-row-start: 3; }
+  .oprichter img { height: 350px;  }
+  .campus-kaart { width: 280px;  height: 250px;  }
+  .student-kaart { width: 240px;  }
+  footer { grid-template-columns: 1fr; justify-items: center; }
+  footer > img { grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; }
+  footer > p { grid-column-start: 1; grid-column-end: 2; grid-row-start: 2; }
+  footer > a { grid-column-start: 1; grid-column-end: 2; grid-row-start: 3; }
+}
+
+/* Geen animatie als de bezoeker minder beweging heeft ingesteld. */
+@media (prefers-reduced-motion: reduce) {
+  .schuifrij,
+.schuifrij.doorlopend { animation: none;  }
+}
+.campus-tekst .bekijk-knop { margin-top: 12px;  }
+
+
+
+
+
