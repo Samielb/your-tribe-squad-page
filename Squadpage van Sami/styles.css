@@ -16,7 +16,7 @@ em { font-family: Georgia, serif;  }
 .inhoud { width: 90%;  max-width: 1280px;  margin: 0 auto;  }
 
 /* Grid zet logo, Home, locatie en Squads in vier kolommen. */
-header { border-bottom: 2px solid #000000;  }
+header { border-bottom: 1.5px solid #000000;  }
 .navigatie {
   display: grid; grid-template-columns: auto auto 1fr auto; 
   align-items: center; 
