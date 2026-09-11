@@ -41,7 +41,9 @@ ul.squad {
     grid-template-columns: 13em;
     column-gap: 2em;
     padding-left: 0.5vw;
+    font-size: 15px;
 
+    /* the site will be responsive because of this */
     @media (min-width:320px) {
         grid-template-columns: 13em 13em 13em;
     }
@@ -54,6 +56,7 @@ ul.squad {
     @media (min-width: 1280px) {
         grid-template-columns: 13em 13em 13em 13em 13em 13em;
     }
+
 
 }
 
