@@ -6,6 +6,8 @@ body {
   color: #242720; 
   font-family: Arial, sans-serif; 
 }
+
+
 a { color: inherit;  text-decoration: none;  }
 a:hover { text-decoration: underline;  }
 a:focus-visible, .schuifvenster:focus-visible { outline: 3px solid #8657cd;  outline-offset: 4px;  }
@@ -54,7 +56,7 @@ header { border-bottom: 1.5px solid #000000;  }
 .campussen { background: #eaece2;  }
 .schuifvenster { overflow-x: auto;  padding: 5px 0;  }
 .schuifrij { display: flex;  gap: 22px;  width: max-content;  }
-.schuifrij article { flex-shrink: 0;  overflow: hidden;  border-radius: 5px;  }
+.schuifrij article { flex-shrink: 0;  border-radius: 5px;  }
 
 .campus-kaart {
   position: relative; 
@@ -74,16 +76,15 @@ header { border-bottom: 1.5px solid #000000;  }
 }
 .campus-tekst span { font-size: 11px;  }
 .campus-tekst h3 { font-size: 25px;  margin: 8px 0 0;  }
-.studenten .schuifrij { gap: 16px;  }
+.studenten .schuifrij { gap: 16px; width: 100dvw; }
 
-/* slider.js berekent hoe ver en hoe snel de kaarten schuiven. */
-.schuifrij.doorlopend { animation: doorlopen var(--duur) linear infinite;  }
 
 @keyframes doorlopen {
   to { transform: translateX(var(--afstand));  }
 }
 .student-kaart { width: 280px;  background: #eeeee6;  border: 1px solid #d9d9cf;  }
 .student-kaart img {
+
   display: block; 
   width: 100%; 
   height: 230px; 
