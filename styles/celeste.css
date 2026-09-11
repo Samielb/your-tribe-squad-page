@@ -10,14 +10,23 @@ img.logo {
 
 
 
-menu {
-  list-style-type: none; /*to get rid of the list dots */
-  margin: 0;
-  padding: 0;
-  display:flex;
-  gap: 1em;
-  align-items: center;
-  background-color: #66d896
+/* dit is de Grid die de logo, Home, locatie en Squads in vier kolommen. */
+header { border-bottom: 1.5px solid #000000;  }
+.navigatie {
+  display: grid; grid-template-columns: auto auto 1fr auto; 
+  align-items: center; 
+  gap: 30px; 
+  width: 94%; 
+  margin: auto; 
+  padding: 22px 0; 
+}
+.logo img { display: block;  width: 180px;  height: auto;  }
+.locatie { justify-self: center; font-size: 14px; }
+.knop {
+  background: #242720; 
+  color: white; 
+  padding: 14px 22px; 
+  border-radius: 5px; 
 }
 
 menu li a {
