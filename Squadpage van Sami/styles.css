@@ -119,9 +119,9 @@ footer p { margin: 0; text-align: center; }
 .navigatie .locatie { grid-column-start: 3; grid-column-end: 4; }
 .navigatie .knop { grid-column-start: 4; grid-column-end: 5; }
 
-footer > img { grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; }
-footer > p { grid-column-start: 2; grid-column-end: 3; grid-row-start: 1; }
-footer > a { grid-column-start: 3; grid-column-end: 4; grid-row-start: 1; }
+footer > img { grid-column-start: 1; grid-column-end: 2;}
+footer > p { grid-column-start: 2; grid-column-end: 3;}
+footer > a { grid-column-start: 3; grid-column-end: 4;}
 /* Aanpassingen voor kleine schermen */
 @media (max-width: 600px) {
   .logo img { width: 130px;  }
@@ -139,8 +139,6 @@ footer > a { grid-column-start: 3; grid-column-end: 4; grid-row-start: 1; }
   .student-kaart { width: 240px;  }
   footer { grid-template-columns: 1fr; justify-items: center; }
   footer > img { grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; }
-  footer > p { grid-column-start: 1; grid-column-end: 2; grid-row-start: 2; }
-  footer > a { grid-column-start: 1; grid-column-end: 2; grid-row-start: 3; }
 }
 
 
