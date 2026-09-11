@@ -29,15 +29,6 @@ header { border-bottom: 1.5px solid #000000;  }
   border-radius: 5px; 
 }
 
-menu li a {
-  display: block;
-  color: rgb(0, 0, 0);
-  padding: 14px 16px;
-}
-
-menu li a:hover {
-  background-color: #55bac1;
-}
 
 h1 {
     padding-top: 1vw;
