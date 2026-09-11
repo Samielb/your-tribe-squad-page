@@ -38,10 +38,22 @@ h1 {
 ul.squad {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 13em 13em 13em 13em 13em 13em;
+    grid-template-columns: 13em;
     column-gap: 2em;
     padding-left: 0.5vw;
-    
+
+    @media (min-width:320px) {
+        grid-template-columns: 13em 13em 13em;
+    }
+    @media (min-width:640px) {
+        grid-template-columns: 13em 13em 13em 13em
+    }
+    @media (min-width:960px) {
+        grid-template-columns: 13em 13em 13em 13em 13em;
+    }
+    @media (min-width: 1280px) {
+        grid-template-columns: 13em 13em 13em 13em 13em 13em;
+    }
 
 }
 
@@ -53,7 +65,7 @@ h2 {
 }
 
 ul.squad img {
-    width: 15vw;
+    width: 180px;
     height: auto;
     border-radius: 15px 15px;
     box-shadow: 0 0 2px 2px black;
