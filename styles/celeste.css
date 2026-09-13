@@ -45,18 +45,20 @@ ul.squad {
 
     /* the site will be responsive because of this */
     @media (min-width:320px) {
-        grid-template-columns: 13em 13em 13em;
+        grid-template-columns: 13em 13em;
     }
     @media (min-width:640px) {
-        grid-template-columns: 13em 13em 13em 13em
+        grid-template-columns: 13em 13em 13em;
     }
     @media (min-width:960px) {
+        grid-template-columns: 13em 13em 13em 13em;
+    }
+    @media (min-width: 1030px) {
         grid-template-columns: 13em 13em 13em 13em 13em;
     }
     @media (min-width: 1280px) {
         grid-template-columns: 13em 13em 13em 13em 13em 13em;
     }
-
 
 }
 
