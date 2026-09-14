@@ -34,6 +34,12 @@ header { border-bottom: 1.5px solid #000000;  }
   padding: 14px 22px; 
   border-radius: 5px; 
 }
+.knop-text {
+  background: #242720; 
+  color: white; 
+  border-radius: 5px;
+  padding: 7px 20px;  
+}
 
 /* op laptop 3 colomns en op telefoon 1 */
 .oprichters { padding: 40px 0;  }
