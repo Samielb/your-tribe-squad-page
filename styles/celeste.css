@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+/* to add a font not already in it */
+@font-face {
+    font-family: flags;
+    src: url(../assets/The\ Flaggy\ St.ttf);
+}
+
 img.logo {
  width:10vw ;
  height: 100%;
@@ -40,8 +46,10 @@ ul.squad {
     display: grid;
     grid-template-columns: 13em;
     column-gap: 2em;
+    row-gap: 1em;
     padding-left: 10px;
     font-size: 15px;
+    font-family: flags;
 
     /* the site will be responsive because of this */
     @media (min-width:410px) {
@@ -60,7 +68,16 @@ ul.squad {
         grid-template-columns: 13em 13em 13em 13em 13em 13em;
     }
 
+
+    li {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    justify-items: center;
+
+    
 }
+}
+
 
 
 h2 {
