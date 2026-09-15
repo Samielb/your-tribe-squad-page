@@ -44,44 +44,42 @@ header { border-bottom: 1.5px solid #000000;  }
 h1 {
     padding-top:0.2em ;
     padding-left: 0.5em;
-    font-size: 75px;
+    font-size: 90px;
     font-family: books;
 }
 
 ul.squad {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 13em;
-    column-gap: 2em;
-    row-gap: 1em;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
     padding-left: 10px;
-    font-size: 15px;
+    font-size: 20px;
     font-family: flags;
 
     /* the site will be responsive because of this */
     @media (min-width:410px) {
-        grid-template-columns: 13em 13em;
+        grid-template-columns: 1fr 1fr;
     }
     @media (min-width:640px) {
-        grid-template-columns: 13em 13em 13em;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     @media (min-width:860px) {
-        grid-template-columns: 13em 13em 13em 13em;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     @media (min-width: 1030px) {
-        grid-template-columns: 13em 13em 13em 13em 13em;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     @media (min-width: 1280px) {
-        grid-template-columns: 13em 13em 13em 13em 13em 13em;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
 
     li {
     display: grid;
     grid-template-rows: max-content 1fr;
-    justify-items: center;
-
-    
+    justify-items: center;  
 }
 }
 
@@ -103,9 +101,6 @@ ul.squad img {
 @media (max-width: 600px) {
   .logo img { 
     width: 130px;  
-  }
-  h1 {
-    font-size: 36px;
   }
   h2 {
     font-size: 26px;
