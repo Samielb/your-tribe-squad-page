@@ -25,11 +25,26 @@ h1 {
   margin: 7px;
 }
 
-ul{
+ul.locations{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+ul.locations li{
+  grid-column-start:1;
+  grid-column-end:2;
+}
+
+ul.photos{
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding-bottom: 10px;
+}
+
+ul.photos li:nth-of-type(odd){
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 img {
