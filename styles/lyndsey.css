@@ -25,23 +25,11 @@ h1 {
   margin: 7px;
 }
 
-/* .figure-grid {
+ul{
+  list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.figure-grid img {
-  grid-column: 20;
-  grid-row: 1;
-}
-
-.figure-grid figcaption {
-  grid-column: 2;
-  grid-row: 2;
-} */
-
-figure {
-  display: grid; grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 10px;
 }
 
 img {
