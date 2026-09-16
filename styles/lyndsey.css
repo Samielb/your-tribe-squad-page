@@ -1,5 +1,6 @@
 /* dit is de Grid die de logo, Home, locatie en Squads in vier kolommen. */
 header { border-bottom: 1.5px solid #000000;  }
+
 .navigatie {
   display: grid; grid-template-columns: auto auto 1fr auto; 
   align-items: center; 
@@ -8,6 +9,7 @@ header { border-bottom: 1.5px solid #000000;  }
   margin: auto; 
   padding: 22px 0; 
 }
+
 .logo img { display: block;  width: 180px;  height: auto;  }
 .locatie { justify-self: center; font-size: 14px; }
 .knop {
@@ -15,4 +17,34 @@ header { border-bottom: 1.5px solid #000000;  }
   color: white; 
   padding: 14px 22px; 
   border-radius: 5px; 
+}
+
+h1 {
+  justify-content: center;
+  display: flex;
+  margin: 7px;
+}
+
+/* .figure-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.figure-grid img {
+  grid-column: 20;
+  grid-row: 1;
+}
+
+.figure-grid figcaption {
+  grid-column: 2;
+  grid-row: 2;
+} */
+
+figure {
+  display: grid; grid-auto-flow: row;
+}
+
+img {
+  width: 400px;
+  height: 250px;
 }

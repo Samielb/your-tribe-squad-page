@@ -3,6 +3,17 @@
     padding: 0;
 }
 
+/* to add a font not already in it */
+@font-face {
+    font-family: flags;
+    src: url(../assets/The\ Flaggy\ St.ttf);
+}
+
+@font-face {
+    font-family: books;
+    src: url(../assets/Book+Ends.ttf)
+}
+
 img.logo {
  width:10vw ;
  height: 100%;
@@ -31,36 +42,47 @@ header { border-bottom: 1.5px solid #000000;  }
 
 
 h1 {
-    padding-top: 1vw;
-    padding-left: 0.5vw;
+    padding-top:0.2em ;
+    padding-left: 0.5em;
+    font-size: 90px;
+    font-family: books;
 }
 
 ul.squad {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 13em;
-    column-gap: 2em;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
     padding-left: 10px;
-    font-size: 15px;
+    font-size: 20px;
+    font-family: flags;
 
     /* the site will be responsive because of this */
     @media (min-width:410px) {
-        grid-template-columns: 13em 13em;
+        grid-template-columns: 1fr 1fr;
     }
     @media (min-width:640px) {
-        grid-template-columns: 13em 13em 13em;
+        grid-template-columns: 1fr 1fr 1fr;
     }
     @media (min-width:860px) {
-        grid-template-columns: 13em 13em 13em 13em;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     @media (min-width: 1030px) {
-        grid-template-columns: 13em 13em 13em 13em 13em;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
     @media (min-width: 1280px) {
-        grid-template-columns: 13em 13em 13em 13em 13em 13em;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
+
+    li {
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    justify-items: center;  
 }
+}
+
 
 
 h2 {
@@ -77,19 +99,131 @@ ul.squad img {
 }
 
 @media (max-width: 600px) {
-  .logo img { width: 130px;  }
-  h1 { font-size: 36px;  }
-  h2 { font-size: 26px;  }
-  .navigatie { grid-template-columns: auto 1fr auto; gap: 20px; }
-  .navigatie .locatie { grid-column-start: 1; grid-column-end: 4; grid-row-start: 2; text-align: center; }
-  .navigatie .knop { grid-column-start: 3; grid-column-end: 4; justify-self: end; }
-  .oprichters-raster { grid-template-columns: 1fr; }
-  .oprichter:nth-child(1) { grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; }
-  .oprichter:nth-child(2) { grid-column-start: 1; grid-column-end: 2; grid-row-start: 2; }
-  .oprichter:nth-child(3) { grid-column-start: 1; grid-column-end: 2; grid-row-start: 3; }
-  .oprichter img { height: 350px;  }
-  .campus-kaart { width: 280px;  height: 250px;  }
-  .student-kaart { width: 240px;  }
-  footer { grid-template-columns: 1fr; justify-items: center; }
-  footer > img { grid-column-start: 1; grid-column-end: 2; grid-row-start: 1; }
+  .logo img { 
+    width: 130px;  
+  }
+  h2 {
+    font-size: 26px;
+  }
+  .navigatie { 
+    grid-template-columns: auto 1fr auto; 
+    gap: 20px; 
+  }
+  .navigatie .locatie { 
+    grid-column-start: 1; 
+    grid-column-end: 4; 
+    grid-row-start: 2; 
+    text-align: center; 
+  }
+  .navigatie .knop { 
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+    justify-self: end; 
+  }
+  .oprichters-raster { 
+    grid-template-columns: 1fr; 
+  }
+  .oprichter:nth-child(1) {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+  }
+  .oprichter:nth-child(2) { 
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 2; 
+  }
+  .oprichter:nth-child(3) { 
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 3; 
+  }
+  .oprichter img { 
+    height: 350px;  
+  }
+  .campus-kaart { 
+    width: 280px;  
+    height: 250px;  
+  }
+  .student-kaart { 
+    width: 240px;  
+  }
+  footer { 
+    grid-template-columns: 1fr; 
+    justify-items: center; 
+  }
+  footer > img { 
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+  }
+}
+
+footer {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+  padding: 26px 0;
+  border-top: 1px solid #d9d9cf;
+}
+
+footer p { 
+    margin: 0; 
+    text-align: center; 
+}
+
+.navigatie > a { 
+    grid-row-start: 1; 
+}
+
+.navigatie .logo { 
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+}
+
+.navigatie > a:nth-child(2) { 
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+}
+
+.navigatie .locatie { 
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+}
+
+.navigatie .knop { 
+    grid-column-start: 4; 
+    grid-column-end: 5; 
+}
+
+footer > img { 
+    grid-column-start: 1; 
+    grid-column-end: 2;
+}
+
+footer > p { 
+    grid-column-start: 2; 
+    grid-column-end: 3;
+    @media (max-width: 410px) {
+        font-family: monospace;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display:block;
+        text-indent: -40ch;
+        font-size: 2em;
+    }
+}
+
+footer > a { 
+    grid-column-start: 3; 
+    grid-column-end: 4;
+}
+
+footer img { 
+    width: 130px; 
+    height: auto; 
+    display: block; 
+    padding-left: 40px;
 }
