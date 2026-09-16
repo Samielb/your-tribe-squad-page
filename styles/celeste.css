@@ -19,6 +19,13 @@ img.logo {
  height: 100%;
 }
 
+a { 
+  color: inherit;  text-decoration: none;  
+}
+
+a:hover { 
+  text-decoration: underline;  
+}
 
 
 /* dit is de Grid die de logo, Home, locatie en Squads in vier kolommen. */
@@ -97,6 +104,12 @@ ul.squad img {
     border-radius: 15px 15px;
     box-shadow: 0 0 2px 2px black;
 }
+
+ul.squad a:hover {
+  filter:sepia(1)
+}
+
+
 
 @media (max-width: 600px) {
   .logo img { 
