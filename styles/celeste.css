@@ -67,7 +67,7 @@ ul.squad {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 10px;
-    row-gap: 10px;
+    row-gap: 30px;
     padding-left: 10px;
     font-size: 20px;
     font-family: flags;
