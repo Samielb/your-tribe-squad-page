@@ -46,6 +46,13 @@ h1 {
     padding-left: 0.5em;
     font-size: 90px;
     font-family: books;
+    font-weight: 100;
+    transition-duration: 1s;
+    perspective:15em;
+}
+
+h1:hover {
+  translate: 5em 0 0;
 }
 
 ul.squad {
@@ -83,13 +90,6 @@ ul.squad {
 }
 }
 
-
-
-h2 {
-    top: 5em;
-    position:relative;
-    padding-left: 10px;
-}
 
 ul.squad img {
     width: 180px;
