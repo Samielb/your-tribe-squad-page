@@ -1,6 +1,10 @@
 /* dit is de Grid die de logo, Home, locatie en Squads in vier kolommen. */
 header { border-bottom: 1.5px solid #000000;  }
 
+body{
+  background:radial-gradient(lightblue,transparent);
+}
+
 .navigatie {
   display: grid; grid-template-columns: auto auto 1fr auto; 
   align-items: center; 
@@ -54,6 +58,10 @@ ul.photos{
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 10px;
+}
+
+ul.photos p{
+  margin-top:3px;
 }
 
 img {
