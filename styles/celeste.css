@@ -1,6 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+  background:radial-gradient(lightblue,transparent);
 }
 
 /* to add a font not already in it */
