@@ -25,6 +25,8 @@ squad page
 <img width="612" height="887" alt="afbeelding" src="https://github.com/user-attachments/assets/5a57a41c-23bc-4f81-b81b-d9f4051c3856" />
 
 campus page
+<img width="1835" height="831" alt="afbeelding" src="https://github.com/user-attachments/assets/838f9688-a1f7-4ac1-8773-ce4326911d27" />
+<img width="887" height="902" alt="afbeelding" src="https://github.com/user-attachments/assets/9a90eb53-6642-4149-8dbc-fafb9a99cecf" />
 
 # Ons team
 Wij zijn 3 studenten die samen werken aan deze squad page. Celeste, Lyndsey en Sami. Onze informatie kan je vinden op onze squad page.
